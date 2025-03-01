@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Zwigato Restaurant</title>
+    <style>
+       
+       
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.Container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1 2 10px black;
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: springgreen;
+    color: Black;
+    border: none;
+    border-radius: 5px;
+    
+}
+button:hover {
+    background-color: springgreen;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <h2>Login To Swiggy</h2>
+        <form action="process_login.php" method="POST">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
